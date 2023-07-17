@@ -38,7 +38,7 @@ const PORT= process.env.PORT || 9000
 
 
 mongoose
-    .connect('mongodb+srv://zabe:12345@cluster0.gqbqyqo.mongodb.net/test', {
+    .connect(process.env.MONGO_URL, {
       useNewUrlParser: true,
       useUnifiedTolology: true,
     })
